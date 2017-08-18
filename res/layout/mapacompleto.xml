@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res/com.example.compuspeed">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <com.example.compuspeed.Speedometer
+        android:id="@+id/speedometerMapaCompleto"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:currentSpeed="0"
+        app:maxSpeed="200"
+        app:offColor="#0B0B3B"
+        app:onColor="#0B0B3B"
+        app:scaleColor="#0B0B3B" 
+        app:velocidadColor="#0B0B3B"
+        app:anchoVelocimetro="25"
+        app:readingTextSize="35dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonCerrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/icono_cerrar" />
+
+    <ImageView
+        android:id="@+id/imgBateriaPrincipalMapa"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButtonCerrar"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bateria_100" />
+
+    <TextView
+        android:id="@+id/txtCargaBateriaMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgBateriaPrincipalMapa"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="0"
+        android:textColor="#0B0B3B"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

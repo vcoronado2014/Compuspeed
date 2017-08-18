@@ -1,0 +1,30 @@
+<html>
+<head>
+<link href="cs/lateral.css" rel="stylesheet" />
+<script src="js/jquery-1.7.2.min.js"></script>   
+<script src="js/appindice.js"></script>
+<style style="color: #FFFFFF">
+</style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            g1 = new JustGage({ id: 'g1', title: 'Máxima', value: 0, min: 0, max: 150, valueFontColor: '#fff', labelFontColor: 'white', titleFontColor: 'white', valueFontColor: 'white', showMinMax: false, gaugeWidthScale:0.6, labelFontColor: 'white', levelColors: ['#1B2A8A', '#020726', '#FA093D'], label: 'Vel.' });
+            //g2 = new JustGage({ id: 'g2', title: 'Promedio', value: 0, min: 0, max: 100, valueFontColor: '#fff', labelFontColor: 'Yellow', titleFontColor: 'Yellow', valueFontColor: 'Yellow', showMinMax: false, gaugeWidthScale: 0.6, labelFontColor: 'Yellow', levelColors: ['#1B2A8A', '#020726', '#FA093D'], label: 'Vel.' });
+            g3 = new JustGage({ id: 'g3', title: 'Altitud', value: 0, min: 0, max: 800, valueFontColor: '#fff', labelFontColor: 'white', titleFontColor: 'white', valueFontColor: 'white', showMinMax: false, gaugeWidthScale: 0.6, labelFontColor: 'white', levelColors: ['#1B2A8A', '#020726', '#FA093D'], label: 'Mts.' });
+            g4 = new JustGage({ id: 'g4', title: 'Precisión', value: 0, min: 0, max: 100, valueFontColor: '#fff', labelFontColor: 'Yellow', titleFontColor: 'Yellow', valueFontColor: 'Yellow', showMinMax: false, gaugeWidthScale:0.6, labelFontColor: 'Yellow', levelColors: ['#1B2A8A', '#020726', '#FA093D'], label: 'Mts.' });
+			g5 = new JustGage({ id: 'g5', title: 'Recorrido', value: 0, min: 0, max: 800, valueFontColor: '#fff', labelFontColor: 'white', titleFontColor: 'white', valueFontColor: 'white', showMinMax: false, gaugeWidthScale: 0.6, labelFontColor: 'white', levelColors: ['#1B2A8A', '#020726', '#FA093D'], label: 'KMts.' });
+        });
+        window.onload = function () {
+            
+        };
+    </script>
+</head>
+<body>
+<div>
+</div>
+<div id="g1"></div>
+
+<div id="g3"></div>
+<div id="g4"></div>
+<div id="g5"></div>
+</body>
+</html>

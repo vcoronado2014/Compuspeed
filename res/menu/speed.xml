@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings" android:titleCondensed="Configuraciones"/>
+    
+    
+    <item android:id="@+id/mapa" android:titleCondensed="Mapa" android:title="Mapa" android:orderInCategory="102"></item>
+    <item android:id="@+id/salir" android:orderInCategory="109" android:titleCondensed="Salir" android:title="Salir" android:showAsAction="always"></item><item android:id="@+id/Guardar" android:orderInCategory="105" android:title="Guardar" android:titleCondensed="Guardar"></item><item android:id="@+id/Listado" android:orderInCategory="106" android:title="Listado" android:titleCondensed="Listado"></item>
+
+</menu>

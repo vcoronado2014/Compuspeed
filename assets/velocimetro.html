@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="js/gauge.min.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+
+	<style>body{padding:0;margin:0;background:#3A01DF}</style>
+</head>
+<body>
+	<canvas id="gauge"></canvas>
+<script type ="text/javascript">
+    $(document).ready(function () {gauge = new Gauge({renderTo: 'gauge',width: 260,height: 260,glow: true,units: 'Km/h',title: false,minValue: 0,maxValue: 200,majorTicks: ['0', '20', '40', '60', '80', '100', '120', '140', '160', '180', '200'],minorTicks: 1,strokeTicks: true,highlights: [{ from: 0, to: 50, color: 'rgba(0,   255, 0, .15)' },{ from: 50, to: 80, color: 'rgba(255, 255, 0, .99)' },{ from: 80, to: 100, color: 'rgba(255, 30,  0, .99)' },{ from: 100, to: 150, color: 'rgba(250, 130,  88, .99)' },{ from: 150, to: 200, color: 'rgba(255, 0,  0, .99)' }],colors: {plate: '#3A01DF',majorTicks: '#f5f5f5',minorTicks: '#ddd',title: '#fff',units: '#fff',numbers: '#fff',needle: { start: 'rgba(240, 128, 128, 1)', end: 'rgba(255, 160, 122, .9)' }}});gauge.draw();});
+</script>
+
+</html>

@@ -1,0 +1,96 @@
+     * {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+  /*font: 7px Tahoma;*/
+   background: #3A01DF;
+   /*border: 2px solid rgb(0, 0, 0);*/
+   width:180px;
+   height:85px;
+}
+#hora {
+         width: 120px;
+         margin: 0px auto;
+         text-align: center;
+         font: 10px Tahoma;
+     }
+#hora ul {
+  margin: 0;
+  padding: 0;
+}
+#hora li {
+ padding: 5px;
+  display: inline-block;
+  border-radius: 1px;
+}
+
+#weather1 {
+    font: 7px Tahoma;
+  width: 180px;
+  margin: 0px auto;
+  text-align: center;
+  /*text-transform: uppercase;*/
+  cursor:pointer;
+}
+
+#weather1 h2 {
+  margin: 0 8px 0 3px;
+  color: #fff;
+  font-size: 40px;
+  /*font-weight: 300;*/
+  text-align: right;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+#weather1 h1 {
+  margin: 0px;
+  color: #fff;
+  font-size: 12px;
+  /*font-weight: 300;*/
+  text-align: left;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather1 ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather1 li {
+  
+  /*quitamos por mientras*/
+  /*background: #fff;*/
+  /*background: rgba(255,255,255,0.90);*/
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+  border-radius: 1px;
+}
+
+#weather1 .currently {
+  margin: 0 5px;
+}
+#weather1 .manana {
+ margin: 0px auto;
+  margin: 4px;
+  color: #FFFF00;
+  text-align: center;
+}
+#weather1 .manana1 {
+  margin: 0px auto;
+  color: #FFFF00;
+}
+#weather1 .manana2 {
+  margin: 0px auto;
+  color: #08088A;
+  font-size: 9px;
+}
+#weather1 .separador {
+    width: 180px;
+    height:30px;
+}
+#weather1 hr {
+background-color: blue; 
+}

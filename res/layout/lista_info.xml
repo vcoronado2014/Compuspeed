@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dip" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code: " />
+
+        <TextView
+            android:id="@+id/textView2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha: " />
+
+        <TextView
+            android:id="@+id/textView3_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicio: " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/codigo"
+        android:layout_below="@+id/codigo"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/direccionInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fecha"
+        android:layout_below="@+id/fecha"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/linearLayout1_1"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/linearLayout1_1"
+        android:text="TextView" />
+
+</RelativeLayout>

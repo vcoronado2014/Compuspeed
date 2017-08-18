@@ -1,0 +1,26 @@
+body {
+    border:0px;
+	margin:0px;
+  /*font: 7px Tahoma;*/
+   background: #3A01DF;
+  /* border: 2px solid rgb(0, 0, 0);*/
+   width:330px;
+   height:270px;
+   color: white;
+   font: 7px Tahoma;
+}
+
+      
+      #g1 {
+        width:330px; height:270px;
+        display: inline-block;
+        margin: 0px;
+        padding:0px;
+      }
+      
+      #g2, #g3, #g4 {
+        width:100px; height:60px;
+        display: inline-block;
+        margin: 1em;
+      }
+      

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A01DF"
+    android:gravity="left|right"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Chronometer
+            android:id="@+id/chronometer1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:text="Chronometer"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prom:"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txtPromedioActual"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.02"
+            android:gravity="left"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <DigitalClock
+            android:id="@+id/digitalClock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="DigitalClock"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B0B3B" >
+
+        <TextView
+            android:id="@+id/lblVelocidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:shadowColor="#8a6603"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="1.8"
+            android:text="Esperando..."
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <ImageView
+                    android:id="@+id/imgBateriaPrincipal"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/bateria_100" />
+
+                <TextView
+                    android:id="@+id/txtCargaBateria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="12dp"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imageButtonFono"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/icono_fono" />
+
+            <ImageButton
+                android:id="@+id/imageButtonGmaps"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icono_googlemaps" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imgGps"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/gps_inactivo" />
+
+                <TextView
+                    android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="GPS"
+                    android:textColor="#FFFFFF" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Hora act."
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/txtTActualizado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:text="----"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <WebView
+                android:id="@+id/webView2"
+                android:layout_width="280dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/txtMostrarVelDig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="0"
+                android:layout_marginTop="45dp"
+                android:textColor="#FFFFFF"
+                android:textSize="145dp" />
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/webViewL"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right" />
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+</LinearLayout>
